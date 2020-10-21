@@ -71,6 +71,9 @@
               </ul>
             </p>
           </div>
+          {% if current_user.is_authenticated %}
+            <a class=" btn btn-secondary btn-sm mt-1 mb-1" href="{{ url_for('new_post')}}">Post Paylaş</a>
+          {% endif %}
         </div>
       </div>
     </main>
